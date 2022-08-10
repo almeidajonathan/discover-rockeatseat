@@ -16,6 +16,7 @@ main {
     gap: 3.75rem;
 }
 
+//----------------------COMMONS----------------------//
 section {
     padding: 2.5rem 2rem;
     width: 21.75rem;
@@ -24,79 +25,10 @@ section {
     margin-bottom: 2rem;
 }
 
+.experiences,
+.education,
+.technologies {
 
-.profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 2.5rem;
-    height: 18.25rem;
-
-    img {
-        // margin-top: 2rem;
-        margin-inline: auto;
-        margin-bottom: 1.875rem;
-    }
-
-    .text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        #name { 
-            font-size: 1.437rem;
-            font-weight: 700;
-            margin-bottom: .625rem;
-        }
-    
-        #role {
-            font-size: 0.875rem;
-            font-weight: 400;
-        }
-    }
-
-   
-}
-
-.links {
-    
-    ul li a {
-        display: flex;
-        align-items: center;
-        margin-bottom: 1.25rem;
-    }
-
-    ul li a img {
-        margin-right: 1.4rem;
-        fill: red;
-    }
-
-    ul li a p {
-        font-size: .875rem;
-        text-decoration: none;
-        color: $text-color;
-    }
-}
-
-.technologies .tags {
-    display: grid;
-    margin-inline: auto;
-    gap: .5rem;
-    grid-template-columns: repeat(3, 1fr);
-
-    .tag {
-    color: $body-bg-color;
-    text-align: center;
-    font-size: .675rem;
-    text-transform: uppercase;
-    padding-block: .2rem;
-    background-color: $bg-techs;
-    border-radius: 10px;
-    }
-}
-
-.experiences, .education, .technologies {
-    
     p {
         font-size: 1.25rem;
         font-weight: 700;
@@ -131,23 +63,248 @@ ul li::marker {
     width: 128px;
     height: 128px;
     border-radius: 50%;
+    margin: 1.9375rem 1.25rem 2.625rem 1.875rem;
 }
 
+
+//----------------------PROFILE----------------------//
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.5rem;
+    height: 18.25rem;
+
+    img {
+        // margin-top: 2rem;
+        margin-inline: auto;
+        margin-bottom: 1.875rem;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        #name {
+            font-size: 1.437rem;
+            font-weight: 700;
+            margin-bottom: .625rem;
+        }
+
+        #role {
+            font-size: 0.875rem;
+            font-weight: 400;
+        }
+    }
+
+
+}
+
+//----------------------LINKS----------------------//
+.links {
+
+    ul li a {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.25rem;
+    }
+
+    ul li a img {
+        margin-right: 1.4rem;
+        fill: red;
+    }
+
+    ul li a p {
+        font-size: .875rem;
+        text-decoration: none;
+        color: $text-color;
+    }
+}
+
+//----------------------TECHNOLOGIES----------------------//
+.technologies .tags {
+    display: grid;
+    margin-inline: auto;
+    gap: .5rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    .tag {
+        color: $body-bg-color;
+        text-align: center;
+        font-size: .675rem;
+        text-transform: uppercase;
+        padding-block: .2rem;
+        background-color: $bg-techs;
+        border-radius: 10px;
+    }
+}
+
+//----------------------MAIN CONTENT----------------------//
 .profile-picture {
     border: 2px solid #00FF00;
 }
 
-.projects {
-    margin-top: 2.5rem;
-}
-
-.projects, .posts {
-    width: 59.5rem;
+//-----COMMONS-----//
+.title-description,
+.repos {
+    margin-bottom: 1.875rem;
 }
 
 .title-description {
     width: 100%;
-    height: 5.125rem;
+    height: 5.375rem;
     border-radius: 20px;
     background-color: $bg-cards;
+
+    &.project {
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.875rem;
+
+        p:nth-child(1) {
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+    }
+
+    &.post-title {
+        padding: 1.875rem;
+
+        p {
+            font-weight: 700;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+//-----PROJECTS-----//
+.projects {
+    width: 59.5rem;
+}
+
+.repos {
+    display: flex;
+    height: 11.625rem;
+    justify-content: space-between;
+}
+
+.repo {
+    width: 28.8125rem;
+    height: 100%;
+    background-color: $bg-cards;
+    border-radius: 20px;
+
+    .title-repo {
+        width: 7.1875rem;
+        height: 1.25rem;
+        margin: 1.875rem 19.75rem 1.25rem 1.875rem;
+        font-weight: 700;
+        display: flex;
+
+        img {
+            margin-right: 1rem;
+        }
+    }
+
+    .description-repo {
+        width: 26.3125rem;
+        margin-bottom: 1.25rem;
+        margin-left: 1.875rem;
+    }
+
+    .others-info {
+        display: flex;
+        justify-content: space-between;
+
+        .left-side {
+            margin-left: 1.875rem;
+            display: flex;
+            width: 8rem;
+            height: 1.25rem;
+            font-size: 0.875rem;
+
+            img {
+                margin-right: .5rem;
+            }
+
+            .stars {
+                display: flex;
+                margin-right: 1rem;
+                align-items: center;
+            }
+            .branch {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        .right-side {
+            display: flex;
+            margin-right: 1.875rem;
+            margin-left: 11.3125rem;
+            width: 5.75rem;
+            height: 1rem;
+            font-size: 0.875rem;
+
+            .circle {
+                width: 0.9375rem;
+                height: 0.9375rem;
+                border-radius: 50%;
+                border: 1px solid #fff;
+                background-color: #f5f560;
+                margin-right: .5rem;
+            }
+        }
+    }
+}
+
+
+
+//-----POSTS-----//
+.post {
+    display: flex;
+    background-color: $bg-cards;
+    border-radius: 20px;
+    height: 12.5625rem;
+
+    .contents {
+        width: 38.25rem;
+        height: 8.0625rem;
+        margin: 1.875rem 10.125rem 2.625rem 1.25rem;
+    }
+
+    .title-post {
+        height: 2rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+        align-items: flex-start;
+    }
+
+    .date {
+        width: 5rem;
+        height: 1.125rem;
+        margin-bottom: 1.75rem;
+        font-size: 0.875rem;
+    }
+
+    .content-post {
+        width: 32rem;
+        height: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 0.6875rem;
+    }
+
+    .hash-tags {
+        width: 27.875rem;
+        height: 1.3125rem;
+        display: flex;
+        font-size: 0.875rem;
+        font-weight: 300;
+        justify-content: space-between;
+    }
+
+
 }
