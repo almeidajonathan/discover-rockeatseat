@@ -13,20 +13,25 @@
     <div class="container">
         <button class="primary-button">Abrir janela</button>
     </div>
-    <div class="modal">
-        <p class="close">fechar</p>
+    <div class="modal disabled">
+       
         <div class="card">
             <div class="content">
                 <div class="info">
                     <p class="title">Title</p>
-                    <i class='bx bx-x close'></i>
+                    <i class='close bx bx-x'></i>
                 </div>
-                <p class="paragraph">Lorem ipsum dolor sit amet</p>
-                <input type="text">
+                <div class="form">
+                    <p class="paragraph">Lorem ipsum dolor sit</p>
+                    <input type="text">
+                </div>
+                <div class="warning disabled">
+                    <i class='bx bx-info-circle'>Por favor preencha o campo acima.</i>
+                </div>
             </div>
             <button class="confirm">Confirmar</button>
         </div>
     </div>    
-    
+    <script src="script.js"></script>
 </body>
 </html>
