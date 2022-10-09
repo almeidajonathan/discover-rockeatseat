@@ -22,14 +22,12 @@ button {
     font-size: 24px;
     border: none;
     border-radius: 5px;
-    position: relative;
-    transform: translate(-50%, -50%);
     cursor: pointer;
     transition: .2s ease;
 }
 
 .primary-button {
-
+    position: relative;
     background-color: #9439b3;
     color: #fff;
     top: 50%;
@@ -48,13 +46,19 @@ button {
     height: 100vh;
     position: fixed;
     z-index: 999;
+    /* transition: all .3s ease; */
 }
 
+.disabled {
+    /* transition: 1s ease; */
+    display: none;
+}
 
 .close {
     margin-top: 1rem;
     font-size: 32px;
     align-self: flex-start;
+    cursor: pointer;
 }
 .info {
     display: flex;
@@ -74,23 +78,56 @@ button {
 
 .content {
     margin-inline: auto;
-    width: 26.125rem;
+    width: 90%;
     /* background-color: red; */
 }
 
 p.title {
-    font-size: 48px;
+    margin-top: 3rem;
+    padding-inline: 2rem;
+
+    font-size: 52px;
     font-weight: 600;
 }
 
-p.paragraph {
-    margin-top: 4rem;
-    font-size: 28px;
-    line-height: 2.5rem;
+.form {
+    padding-inline: 2rem;
+    margin-top: 2.5rem;
+    width: 100%;
+    /* background-color: red; */
 }
 
+p.paragraph {
+    /* margin-left: 2rem; */
+    font-size: 28px;
+    line-height: 2.5rem;
+
+}
+
+input {
+    margin-left: 2rem;
+    height: 60px;
+    margin-inline: auto;
+    width: 100%; 
+    border-radius: 5px;
+    border: none;
+    font-size: 28px;
+    padding: 1rem;
+    color: rgb(35, 34, 34);
+}
+.warning {
+    color: rgb(232, 22, 22);
+    height: 16px;
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
 .confirm {
-   
+    position: relative;
+    margin-top: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+   /* position: sticky; */
     background-color: #4fb854;
 }
 
