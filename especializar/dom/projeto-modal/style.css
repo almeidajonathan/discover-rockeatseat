@@ -134,5 +134,39 @@ input {
 .confirm:hover {
     background-color: #77bd7a;
 }
+/* 
+.toast-message {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1.5rem;
+    position: absolute;
+    top: -60px;
+    width: 350px;
+    height: 60px;
+    font-size: 24px;
+    background-color: #e4e4d3;
+    border-left: 1px solid #f8f8f5;
+    border-top: 1px solid #f8f8f5;
+    border-right: 1px solid #d3d3cd;
+    border-bottom: 1px solid #d3d3cd; 
+    border-radius: 5px;
+    color: #000;
+    z-index: 1000;
+    transform: translateX(-50%);
+    left: 50%;
+    animation: MoveUpDown 1s linear;
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(-60px);
+    }
+    50% {
+        transform: translateY(70px);
+    }
+} */
+
+
 
 
