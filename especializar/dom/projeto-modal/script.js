@@ -5,7 +5,7 @@ const closeBtn = document.querySelector('.close');
 const submitBtn = document.querySelector('button.confirm');
 const input = document.querySelector('input');
 const warningMessage = document.querySelector('.warning');
-
+const toastMessage = document.querySelector('.toast-message');
 
 function toggleModal() {
     modal.classList.toggle('disabled');
